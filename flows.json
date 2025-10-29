@@ -392,5 +392,13 @@
                 "1ddf91d9805747f4"
             ]
         ]
+    },
+    {
+        "id": "e37b9458cdb3e9a1",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
     }
 ]
