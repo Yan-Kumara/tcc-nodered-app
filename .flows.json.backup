@@ -416,7 +416,7 @@
         "type": "function",
         "z": "4ce4287fc13e55d9",
         "name": "function 1",
-        "func": "const bcrypt = require('bcryptjs');\n\n// A SENHA QUE VOCÊ QUER USAR - COLOQUE-A AQUI\nconst senhaPlana = \"12345678\"; \n\nbcrypt.hash(senhaPlana, 8, function(err, hash) {\n    if (err) {\n        node.error(\"Erro ao gerar hash: \" + err);\n        msg.payload = \"Erro ao gerar hash.\";\n        msg.statusCode = 500;\n    } else {\n        msg.payload = \"Senha Plana: \" + senhaPlana + \"<br><br>\" + \"HASH GERADO (copie tudo abaixo):<br><br>\" + hash;\n        msg.statusCode = 200;\n    }\n    node.send(msg);\n});",
+        "func": "const bcrypt = require('bcryptjs');\n\n// A SENHA QUE VOCÊ QUER USAR - COLOQUE-A AQUI\nconst senhaPlana = \"123456789\"; \n\nbcrypt.hash(senhaPlana, 8, function(err, hash) {\n    if (err) {\n        node.error(\"Erro ao gerar hash: \" + err);\n        msg.payload = \"Erro ao gerar hash.\";\n        msg.statusCode = 500;\n    } else {\n        msg.payload = \"Senha Plana: \" + senhaPlana + \"<br><br>\" + \"HASH GERADO (copie tudo abaixo):<br><br>\" + hash;\n        msg.statusCode = 200;\n    }\n    node.send(msg);\n});",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
