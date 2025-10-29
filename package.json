@@ -4,7 +4,7 @@
   "description": "Meu projeto Node-RED para o TCC",
   "main": "node_modules/node-red/red.js",
   "scripts": {
-    "start": "node-red --userDir ./"
+    "start": "node-red --userDir ./ --settings ./settings.js"
   },
   "dependencies": {
     "node-red": "^3.0.0",
